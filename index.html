@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Rojos - Graphic Designer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            top: 0;
+            left: -200%;
+            transform: rotate(45deg);
+            animation: slide 3s linear infinite;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease forwards;
+            opacity: 0;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 1.5em;
+            opacity: 0;
+            animation: fadeIn 2.5s ease forwards;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 50px auto;
+            padding: 40px;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease;
+        }
+
+        section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 4px;
+            background: #4CAF50;
+            transition: width 0.5s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        h2:hover::after {
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+            font-size: 1.1em;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.5s ease;
+        }
+
+        ul li.in-view {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Keyframes for animations */
+        @keyframes slide {
+            to {
+                left: 200%;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maria Rojos</h1>
+        <p>Professional Graphic Designer</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:maria@novoresume.com">maria@novoresume.com</a></p>
+            <p>Phone: 123 4565</p>
+            <p>Location: Toronto, Canada</p>
+            <p>Website: <a href="http://maria-rojos.com">maria-rojos.com</a></p>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Highly skilled and accomplished Graphic Designer with over 6 years of hands-on experience in delivering creative design solutions across a wide range of industries. Played a pivotal role in revamping the visual identity of multiple organizations, resulting in a 20% increase in market share and a 15% boost in revenue.</p>
+    </section>
+
+    <section class="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Freelance - Orange Media</h3>
+            <p><strong>Professional Graphic Designer</strong> | 08/2019 - Present</p>
+            <ul>
+                <li>Establish and manage a freelance graphic design business that aims to assist companies in brand development.</li>
+                <li>Spearhead visual identity including brand positioning, promotions, and digital marketing for different companies.</li>
+                <li>Develop creative advertising content for various media, including catalogs, menus, business cards, flyers, posters, t-shirts, and product packaging.</li>
+                <li>Led a team of 3 junior designers in producing social media assets, infographics, and banners for an international conference.</li>
+                <li>Redesigned the company website's user interface over a 2-month period, resulting in a 30% reduction in bounce rate.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>BeSun Marketing & Media</h3>
+            <p><strong>Graphic Designer</strong> | 03/2015 - 06/2019</p>
+            <ul>
+                <li>Produced both eCommerce and non-eCommerce creative website layouts and content for clients.</li>
+                <li>Created a series of packaging designs for a new product line, meeting all project milestones within a tight 1-week deadline.</li>
+                <li>Worked closely with a team of 5 illustrators and artists to produce animated videos for an educational platform, garnering over 1 million views.</li>
+                <li>Managed the creative direction for a multimedia advertising campaign for a non-profit organization, achieving a 40% higher reach.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Blue Lens Media Corp</h3>
+            <p><strong>Graphic Designer</strong> | 05/2013 - 02/2015</p>
+            <ul>
+                <li>Utilized After Effects and other computer proficiency in creating motion graphic animations for video productions.</li>
+                <li>Performed video and sound editing for diverse ads while ensuring high-quality media productions.</li>
+                <li>Coordinated with clients to successfully create prolific social media graphics suitable for target marketing.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Areas of Expertise</h2>
+        <ul>
+            <li>Visual Design & Storytelling</li>
+            <li>Typography</li>
+            <li>Advanced Graphic Design</li>
+            <li>Infographics Design</li>
+            <li>Dynamic Visual Design</li>
+        </ul>
+    </section>
+
+    <section class="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Adobe Suite (Photoshop, Illustrator, After Effects, InDesign)</li>
+            <li>Coding (HTML, Java, CSS)</li>
+            <li>Generative AI (DALL-E, MidJourney, Synthesa, Bard)</li>
+        </ul>
+    </section>
+
+    <section class="volunteer-projects">
+        <h2>Volunteer & Personal Projects</h2>
+        <ul>
+            <li>Content Producer - Personal YouTube Channel (09/2020 - Present)</li>
+            <li>Graphic Artist - 2017 Cancer Awareness Campaign</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p>Bachelor of Fine Arts in Visual Arts | University of Toronto | 2011 - 2014</p>
+    </section>
+
+    <section class="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Video Games</li>
+            <li>Typography</li>
+            <li>Swimming</li>
+            <li>Mindfulness</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Maria Rojos | Graphic Designer</p>
+    </footer>
+
+    <script>
+        // Scroll animation logic for sections and list items
+        const sections = document.querySelectorAll('section');
+        const listItems = document.querySelectorAll('ul li');
+
+        const options = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        listItems.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+
+</body>
+</html>
